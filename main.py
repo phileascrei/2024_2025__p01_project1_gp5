@@ -1,5 +1,5 @@
-from import tools * 
-from import data * 
+from tools import *
+from data import *
 
 def bin_dec_hex_to_bin_dec_hex (init_number, init_base, target_base) :
     target_number = None     
@@ -15,3 +15,4 @@ def do_the_job ():
     bin_dec_hex_to_bin_dec_hex (init_number, \
                                 init_base,\
                                  target_base)
+    
