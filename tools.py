@@ -7,4 +7,7 @@ def ask_for_the_init_base() :
 
 
 def ask_for_the_target_base () :
+    a = 7
     pass
+
+
