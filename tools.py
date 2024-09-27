@@ -3,6 +3,7 @@ def ask_for_the_init_number() :
 
 
 def ask_for_the_init_base() :
+    a = 19
     pass
 
 
