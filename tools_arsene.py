@@ -8,5 +8,7 @@ def ask_for_the_target_base() :
     return target_base
     
     
-    
-    
+def is_a_valid_base(base) :
+    if base in bases_accepted : 
+        return True
+    return False
