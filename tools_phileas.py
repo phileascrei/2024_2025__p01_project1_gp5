@@ -1,5 +1,5 @@
 ask_for_the_init_number = "Le nombre ? : "
-ask_again_for_the_init_number_text = "Le nombre put*** ! :"
+ask_again_for_the_init_number_text = "Le nombre put*** ! : "
 
 
 def is_a_valid_number(number) :
