@@ -9,8 +9,8 @@ def is_a_valid_number(number) :
     return is_a_valid_char
 
 
-def check_char_number_validity () :
-    pass
+def check_char_number_validity (char) :
+    return char in hex_number_valid_chars
 
 
 def ask_for_the_init_number () :
