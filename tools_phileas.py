@@ -6,7 +6,8 @@ def is_a_valid_number() :
         i = i + 1
     return is_a_valid_char
 
-
+def check_char_number_validity () :
+    pass
 
 
 
