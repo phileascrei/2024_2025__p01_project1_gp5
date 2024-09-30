@@ -11,8 +11,8 @@ def check_char_number_validity () :
     pass
 
 
-
-
-
 def ask_for_the_init_number () :
-    pass
+    init_number = intput(ask_for_the_init_number_text)
+    while not (is_a_valid_number (init_number)) :
+        init_number = input(ask_again_for_the_init_number_text)
+    return init_number
