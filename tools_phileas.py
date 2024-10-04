@@ -10,7 +10,7 @@ def is_a_valid_number(number) :
 
 
 def check_char_number_validity (char) :
-    return char in hex_number_valid_chars
+    return char in hex_number_accepted
 
 
 def ask_for_the_init_number () :
