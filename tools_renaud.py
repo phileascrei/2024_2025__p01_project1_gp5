@@ -40,3 +40,9 @@ def check_validity_of_init_number_for_init_base (init_number,init_base) :
             hex_validity = True
     return bin_validity, dec_validity, hex_validity
 
+
+
+
+
+
+
