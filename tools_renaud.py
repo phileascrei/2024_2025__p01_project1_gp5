@@ -14,9 +14,9 @@ def ask_for_the_init_base (init_number) :
         if init_base == "2" :
             init_base = input(non_accepted_base)
     elif check_validity_of_init_number_for_init_base(init_number, init_base) == [False, False, True] : 
-        # WIP
-
-
+        if init_base == "2" or "10" :
+            init_base = input(non_accepted_base)
+    
     return init_base 
 
 
