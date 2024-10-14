@@ -41,36 +41,32 @@ def ask_for_the_init_base(init_number) :
             elif validity == (False, True, True):
                 if init_base == "2":
                     init_base = input(non_accepted_base)
-                    continue  # Redemander l'entrée
+                      # Redemander l'entrée
                 else :
                     return init_base
             elif validity == (False, False, True):
                 if init_base in ["2", "10"]:
                     init_base = input(non_accepted_base)
-                    continue  # Redemander l'entrée
+                      # Redemander l'entrée
                 else :
                     return init_base
         else:
-            print("Base initiale erronée, veuillez réessayer.")  # Message d'erreur pour une entrée invalide
+            init_base = input(non_accepted_base) # Message d'erreur pour une entrée invalide
 # WIP
 
 
 def check_validity_of_init_number_for_init_base (init_number) :
-    bin_validity = False
-    dec_validity = False
-    hex_validity = False
+    bin_validity = True
+    dec_validity = True
+    hex_validity = True
 
     for i in init_number :
         if i in bin_number_accepted : 
-            bin_validity = True 
-            dec_validity = True 
-            hex_validity = True 
+            pass
         elif i in dec_number_accepted : 
-            
-            dec_validity = True 
-            hex_validity = True 
+            bin_validity = False 
         elif i in hex_number_accepted : 
-            
-            hex_validity = True
+            bin_validity = False
+            dec_validity = False
     return bin_validity, dec_validity, hex_validity
 # fonction a rtefaire
