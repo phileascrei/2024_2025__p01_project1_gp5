@@ -12,9 +12,9 @@ hex_number_accepted = dec_number_accepted + ["a","b","c","d","e","f"] + ["A","B"
 
 ask_for_the_init_base_intro_text = "Dans quel base se trouve votre nombre ? \n"
 
-ask_for_the_init_base_exept_bin_and_dec_text = ask_for_the_init_base_intro_text + " Tapez '16' s'il se trouvez dans la base Hexadécimale \n"
+ask_for_the_init_base_exept_bin_and_dec_text = ask_for_the_init_base_intro_text + " Tapez '16' s'il se trouve dans la base Hexadécimale \n"
 
-ask_for_the_init_base_exept_bin_text = ask_for_the_init_base_exept_bin_and_dec_text + " Tapez '10' s'il se trouve dans la base Binaire \n"
+ask_for_the_init_base_exept_bin_text = ask_for_the_init_base_exept_bin_and_dec_text + " Tapez '10' s'il se trouve dans la base Decimale \n"
 
 ask_for_the_init_base_text = ask_for_the_init_base_exept_bin_text + " Tapez '2' s'il se trouve dans la base Binaire \n"
 
