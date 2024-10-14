@@ -30,7 +30,7 @@ def ask_for_the_init_number () :
 
 def bin_to_dec (bin_number) :
     return int(bin_number, 2)
-
+#A modifier, ne pas utiliser la fonction de python
 
 def dec_to_bin(dec_number) :
     binary_number = ""

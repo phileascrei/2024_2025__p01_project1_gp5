@@ -16,4 +16,6 @@ def do_the_job ():
                                  target_base)
 
 # do_the_job()
-print(dec_to_bin(-52))
+# print(dec_to_hex("10"))
+
+print(int("11", 16))
