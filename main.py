@@ -15,5 +15,9 @@ def do_the_job ():
                                 init_base,\
                                  target_base)
 
-do_the_job()
+# do_the_job()
 # print(dec_to_hex("10"))
+
+
+print (hex_to_dec("1a3f"))
+print (dec_to_hex("6719"))

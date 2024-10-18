@@ -18,7 +18,6 @@ def is_a_valid_base(base) :
 
 
 def dec_to_hex(dec_number_str):
-    # Convertir la chaîne en entier
     try:
         dec_number = int(dec_number_str)
     except ValueError:
@@ -40,22 +39,16 @@ def dec_to_hex(dec_number_str):
     return hex_value
 
 def hex_to_dec(hex_number):
-    hex_digits = "0123456789ABCDEF"
     hex_number = capitalize(hex_number)
     decimal_value = 0
-    length = len(hex_number)
+    length = get_length(hex_number)
 
     for i in range(length):
-        digit = hex_number[length - 1 - i] 
-        is_valid = False
-        for j in range(len(hex_digits)):
-            if digit == hex_digits[j]:
-                decimal_value += j * (16 ** i)
-                is_valid = True
-                break
-        if not is_valid:
-            print("n'est pas un chiffre hexadécimal valide.")
-    return decimal_value
+        char = hex_number[length - 1 - i]
+        if char in hex_to_dec_map:
+            decimal_value += int(hex_to_dec_map[char]) * (16 ** i)
+
+    return str(decimal_value)
 
 
 
@@ -67,3 +60,9 @@ def capitalize (chain) :
         else :
             upper_chain += char
     return upper_chain
+
+def get_length(chaine):
+    cpt = 0
+    for char in chaine:
+        cpt += 1
+    return cpt
