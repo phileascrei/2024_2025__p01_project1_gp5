@@ -41,14 +41,29 @@ def dec_to_hex(dec_number_str):
 
 def hex_to_dec(hex_number):
     hex_digits = "0123456789ABCDEF"
-    hex_number = hex_number.upper()  # Pour gérer les lettres en minuscules
+    hex_number = capitalize(hex_number)
     decimal_value = 0
-    
-    for index, digit in enumerate(reversed(hex_number)):
-        if digit in hex_digits:
-            decimal_value += hex_digits.index(digit) * (16 ** index)
-        else:
-            raise ValueError(f"'{digit}' n'est pas un chiffre hexadécimal valide.")
-    
+    length = len(hex_number)
+
+    for i in range(length):
+        digit = hex_number[length - 1 - i] 
+        is_valid = False
+        for j in range(len(hex_digits)):
+            if digit == hex_digits[j]:
+                decimal_value += j * (16 ** i)
+                is_valid = True
+                break
+        if not is_valid:
+            print("n'est pas un chiffre hexadécimal valide.")
     return decimal_value
 
+
+
+def capitalize (chain) :
+    upper_chain = ""
+    for char in chain :
+        if char in lowercase_alphabet :
+            upper_chain += (uppercase_alphabet[lowercase_alphabet.index(char)])
+        else :
+            upper_chain += char
+    return upper_chain

@@ -26,3 +26,5 @@ ask_again_for_the_init_base_text = "Base initiale eronnée, veuillez réessayer 
 non_accepted_base = "La base n'est pas acceptée pour le nombre entré, entrer une autre base : "
 
 
+lowercase_alphabet = "abcdefghijklmnopqrstuvwxyz"
+uppercase_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

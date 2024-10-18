@@ -18,4 +18,5 @@ def do_the_job ():
 # do_the_job()
 # print(dec_to_hex("10"))
 
-print(int("11", 16))
+
+print(hex_to_dec("Ad5fT"))
