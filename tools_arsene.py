@@ -17,26 +17,15 @@ def is_a_valid_base(base) :
     return False
 
 
-def dec_to_hex(dec_number_str):
-    try:
-        dec_number = int(dec_number_str)
-    except ValueError:
-        raise ValueError("L'entrée doit être une chaîne représentant un nombre entier.")
+def dec_to_hex(dec_number):
+    result = 0
+    dec_number = int(dec_number)
+    while dec_number > 0 :
+        result += dec_number % 12
+    return result
+# WIP a continuer la conversion
 
-    if dec_number < 0:
-        return "-" + dec_to_hex(str(-dec_number))
-    
-    hex_digits = "0123456789ABCDEF"
-    if dec_number == 0:
-        return "0"
-    
-    hex_value = ""
-    while dec_number > 0:
-        remainder = dec_number % 16
-        hex_value = hex_digits[remainder] + hex_value
-        dec_number //= 16
-    
-    return hex_value
+
 
 def hex_to_dec(hex_number):
     hex_number = capitalize(hex_number)
