@@ -67,7 +67,7 @@ bin_to_hex_map = {
         "1111": 'F'or'f'
     }
 
-hex_to_dec = {
+hex_to_dec_map = {
     "0": '0',
     "1": '1',
     "2": '2',
@@ -86,7 +86,7 @@ hex_to_dec = {
     'F'or'f': '15'
 }
 
-dec_to_hex = {
+dec_to_hex_map= {
     "0": '0',
     "1": '1',
     "2": '2',
