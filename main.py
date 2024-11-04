@@ -19,3 +19,5 @@ def do_the_job ():
 # print(dec_to_hex("10"))
 
 
+print (hex_to_bin("375"))
+print (bin_to_hex('11110'))

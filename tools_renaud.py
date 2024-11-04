@@ -83,6 +83,15 @@ def hex_to_bin(hex_number):
         bin_number = dec_to_bin(dec_number)
         return bin_number
 
+def bin_to_hex(bin_number):
+
+    if bin_number == "0" :
+        return "0"
+    else :
+        dec_number = bin_to_dec(bin_number)
+        hex_number = dec_to_hex(dec_number)
+        return hex_number
+
 
 # def bin_to_hex(bin_number):
 
