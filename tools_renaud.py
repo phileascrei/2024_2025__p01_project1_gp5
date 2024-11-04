@@ -75,11 +75,7 @@ def check_validity_of_init_number_for_init_base (init_number) :
 #     return bin_number
 
 def hex_to_bin(hex_number):
-    bin_number = ''
 
-    for char in hex_number:
-        bin_number += hex_to_bin_map[char]
-    return bin_number
     if hex_number == "0" :
         return "0"
     else :
@@ -90,8 +86,6 @@ def hex_to_bin(hex_number):
 
 # def bin_to_hex(bin_number):
 
-def bin_to_hex(bin_number):
-    hex_number = ''
 #     bin_number = int(bin_number)
 #     hex_number = ""
 
@@ -104,9 +98,7 @@ def bin_to_hex(bin_number):
 #         bin_number = bin_number // 2
 #     return hex_number
 
-    for char in bin_number:
-        hex_number += bin_to_hex_map[char]
-    return hex_number# def bin_to_hex(bin_number) :
+# def bin_to_hex(bin_number) :
 #     hex_number = ""
 #     bin_number = int(bin_number)
     
