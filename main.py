@@ -19,5 +19,3 @@ def do_the_job ():
 # print(dec_to_hex("10"))
 
 
-print (hex_to_dec("1a3f"))
-print (dec_to_hex("6719"))

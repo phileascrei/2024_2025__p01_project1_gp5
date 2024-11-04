@@ -1,4 +1,6 @@
 from data import *
+from tools_phileas import *
+from tools_arsene import * 
 
 
 def is_a_valid_base (base) :
@@ -65,18 +67,47 @@ def check_validity_of_init_number_for_init_base (init_number) :
 #     hex_number = 0
 #     return hex_number
 
+# def hex_to_bin(hex_number):
+#     bin_number = ''
+
+#     for char in hex_number:
+#         bin_number += hex_to_bin_map[char]
+#     return bin_number
+
 def hex_to_bin(hex_number):
     bin_number = ''
 
     for char in hex_number:
         bin_number += hex_to_bin_map[char]
     return bin_number
+    if hex_number == "0" :
+        return "0"
+    else :
+        dec_number = hex_to_dec(hex_number)
+        bin_number = dec_to_bin(dec_number)
+        return bin_number
 
 
+# def bin_to_hex(bin_number):
 
 def bin_to_hex(bin_number):
     hex_number = ''
+#     bin_number = int(bin_number)
+#     hex_number = ""
+
+#     if bin_number == 0:
+#         return "0"
+
+#     while bin_number > 0:
+#         remainder = bin_number % 2
+#         hex_number = bin_to_hex_map[remainder] + hex_number
+#         bin_number = bin_number // 2
+#     return hex_number
 
     for char in bin_number:
         hex_number += bin_to_hex_map[char]
-    return hex_number
+    return hex_number# def bin_to_hex(bin_number) :
+#     hex_number = ""
+#     bin_number = int(bin_number)
+    
+#     while bin_number > 0 :
