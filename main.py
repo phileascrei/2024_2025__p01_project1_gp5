@@ -20,4 +20,4 @@ def do_the_job ():
 
 
 print (hex_to_dec("1a3f"))
-print (dec_to_hex("6719"))
+print (dec_to_hex("0"))
