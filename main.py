@@ -18,6 +18,9 @@ def do_the_job ():
 # do_the_job()
 # print(dec_to_hex("10"))
 
-
-print (hex_to_bin("0"))
-print (bin_to_hex('0'))
+print(bin_to_dec("101"))      # Sortie attendue : 5
+print(bin_to_dec("1101"))     # Sortie attendue : 13
+print(bin_to_dec("0"))        # Sortie attendue : 0
+print(bin_to_dec("11111111"))  # Sortie attendue : 255
+print(bin_to_dec("10000000"))  # Sortie attendue : 128
+print(bin_to_dec("101")) 
