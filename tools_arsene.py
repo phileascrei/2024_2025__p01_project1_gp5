@@ -16,14 +16,6 @@ def is_a_valid_base(base) :
         return True
     return False
 
-# def dec_to_hex(dec_number):
-#     result = ""
-#     while get_length(dec_number) >= 0:
-#         remainder = dec_number % 16
-#         result =  dec_to_hex_map[remainder] + result
-#         dec_number //= 16  # Mettre à jour le nombre en le divisant par 16
-#     return result if result else "0"
-
 def dec_to_hex(dec_number):
 
     result = ""
