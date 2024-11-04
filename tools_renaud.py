@@ -84,7 +84,7 @@ def hex_to_bin(hex_number):
         return bin_number
 
 def bin_to_hex(bin_number):
-
+    
     if bin_number == "0" :
         return "0"
     else :

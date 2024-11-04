@@ -118,7 +118,7 @@ dec_to_bin_map= {
     9: "1001"
 }
 
-bin_to_dec = {
+bin_to_dec_map= {
     "0000": 0,
     "0001": 1,
     "0010": 2,

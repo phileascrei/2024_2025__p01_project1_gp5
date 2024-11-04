@@ -36,7 +36,6 @@ def dec_to_bin(dec_number) :
     binary_number = ""
     if is_a_dec_number(dec_number) :
         dec_number = int(dec_number)
-
     while dec_number > 0:
         remainder = dec_number % 2  # Obtenir le reste
         binary_number = str(remainder) + binary_number  # Ajouter le bit à la chaîne
