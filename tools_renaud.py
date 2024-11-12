@@ -67,24 +67,3 @@ def bin_to_hex(bin_number):
         dec_number = bin_to_dec(bin_number)
         hex_number = dec_to_hex(dec_number)
         return hex_number
-
-
-# def bin_to_hex(bin_number):
-
-#     bin_number = int(bin_number)
-#     hex_number = ""
-
-#     if bin_number == 0:
-#         return "0"
-
-#     while bin_number > 0:
-#         remainder = bin_number % 2
-#         hex_number = bin_to_hex_map[remainder] + hex_number
-#         bin_number = bin_number // 2
-#     return hex_number
-
-# def bin_to_hex(bin_number) :
-#     hex_number = ""
-#     bin_number = int(bin_number)
-    
-#     while bin_number > 0 :
