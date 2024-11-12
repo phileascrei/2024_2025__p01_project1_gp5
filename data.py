@@ -22,12 +22,16 @@ ask_for_the_init_base_text = ask_for_the_init_base_exept_bin_text + " Tapez '2' 
 
 
 
-ask_again_for_the_init_base_text = "Base initiale eronnée, veuillez réessayer "
+ask_again_for_the_init_base_text = "Base initiale eronnée, veuillez réessayer : "
 non_accepted_base = "La base n'est pas acceptée pour le nombre entré, entrer une autre base : "
 
 
 lowercase_alphabet = "abcdefghijklmnopqrstuvwxyz"
 uppercase_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+retry = "Voulez-vous effectuer une autre conversion ? (oui/non) : "
+retry_error = "Veuillez répondre par 'oui' ou 'non'."
+thanks = "Merci d'avoir utilisé le programme. À bientôt !"
 
 hex_to_bin_map = {
         '0': '0000',

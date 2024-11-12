@@ -33,9 +33,9 @@ def dec_to_bin(dec_number) :
         dec_number = int(dec_number)
 
     while dec_number > 0:
-        remainder = dec_number % 2  # Obtenir le reste
-        binary_number = str(remainder) + binary_number  # Ajouter le bit à la chaîne
-        dec_number //= 2  # Diviser par 2
+        remainder = dec_number % 2
+        binary_number = str(remainder) + binary_number 
+        dec_number //= 2
 
     return binary_number                                                                                                
 
