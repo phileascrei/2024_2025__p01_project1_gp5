@@ -10,27 +10,64 @@ def ask_for_the_init_number () : # demande d'entrer un nombre en base binaire, d
     return init_number
 
 
+# def ask_for_the_init_base(init_number) : # demande d'entrer la base du nombre donner lors de la fonction ask_for_the_init_number()
+#     init_base = input(ask_for_the_init_base_text)
+
+#     while True:
+#         validity = check_validity_of_init_number_for_init_base(init_number)
+
+#         if is_a_valid_base(init_base):
+#             if validity == (True, True, True):
+#                 init_base = input(ask_for_the_init_base_text)
+#                 return init_base            
+#             elif validity == (False, True, True):
+#                 if init_base == "2":
+#                     init_base = input(non_accepted_base)
+#                 else :
+#                     init_base = input(ask_for_the_init_base_exept_bin_text)
+#                     return init_base
+#             elif validity == (False, False, True):
+#                 if init_base in ["2", "10"]:
+#                     init_base = input(non_accepted_base)
+#                 else :
+#                     init_base = input(ask_for_the_init_base_exept_bin_and_dec_text)
+#                     return init_base
+#         else:
+#             init_base = input(ask_again_for_the_init_base_text)
+
+
 def ask_for_the_init_base(init_number) : # demande d'entrer la base du nombre donner lors de la fonction ask_for_the_init_number()
-    init_base = input(ask_for_the_init_base_text)
+
 
     while True:
         validity = check_validity_of_init_number_for_init_base(init_number)
 
-        if is_a_valid_base(init_base):
-            if validity == (True, True, True):
-                return init_base            
-            elif validity == (False, True, True):
-                if init_base == "2":
-                    init_base = input(non_accepted_base)
-                else :
+
+        if validity == (True, True, True):
+            init_base = input(ask_for_the_init_base_text)
+            if is_a_valid_base(init_base):
+                return init_base
+            else :
+                init_base = input(ask_again_for_the_init_base_text)
+        elif validity == (False, True, True):
+            init_base = input(ask_for_the_init_base_exept_bin_text)
+            if init_base == "2":
+                init_base = input(non_accepted_base)
+            else :
+                if is_a_valid_base(init_base):
                     return init_base
-            elif validity == (False, False, True):
-                if init_base in ["2", "10"]:
-                    init_base = input(non_accepted_base)
                 else :
+                    init_base = input(ask_again_for_the_init_base_text)
+        elif validity == (False, False, True):
+            init_base = input(ask_for_the_init_base_exept_bin_and_dec_text)
+            if init_base in ["2", "10"]:
+                init_base = input(non_accepted_base)
+            else :
+                
+                if is_a_valid_base(init_base):
                     return init_base
-        else:
-            init_base = input(ask_again_for_the_init_base_text)
+                else :
+                    init_base = input(ask_again_for_the_init_base_text)
 
 
 def ask_for_the_target_base() : # demande d'entrer la base dans laquelle le nombre de la fonction ask_for_the_init_number() a la base entrer dans ask_for_the_init_base() doit etre converti
