@@ -56,26 +56,25 @@ def bin_dec_hex_to_bin_dec_hex (init_number, init_base, target_base) : # convert
 
     if init_base == "2" :
         if target_base == "2" :
-            print(init_number)
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + init_base)
         if target_base == "10" :
-            print(bin_to_dec(init_number))
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + bin_to_dec(init_number))
         if target_base == "16" :
-            print(bin_to_hex(init_number))
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + bin_to_hex(init_number))
     if init_base == "10" :
         if target_base == "2" :
-           print(dec_to_bin(init_number))
+           print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + dec_to_bin(init_number))
         if target_base == "10" :
-            print(init_number)
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + init_number)
         if target_base == "16" :
-            print(dec_to_hex(init_number))
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + dec_to_hex(init_number))
     if init_base == "16" :
         if target_base == "2" :
-            print(hex_to_bin(init_number))
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + hex_to_bin(init_number))
         if target_base == "10" :
-            print(hex_to_dec(init_number))
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + hex_to_dec(init_number))
         if target_base == "16" :
-            print(init_number)
-
+            print("En base " + target_base + ", le nombre " + init_number + " en base " + init_base + " est : " + init_number)
 
 def asking_for_retry () : # boucle permettant de demander si l'utilisateur veux refaire une convertion
 
@@ -108,7 +107,7 @@ def dec_to_bin(dec_number) : # converti un nombre decimal en un nombre binaire
         binary_number = str(remainder) + binary_number 
         dec_number //= 2
 
-    return binary_number                                                                                                
+    return str(binary_number)                                                                                               
 
 def bin_to_dec(bin_number) : # converti un nombre binaire en nmbre decimal
     result = 0
@@ -117,7 +116,7 @@ def bin_to_dec(bin_number) : # converti un nombre binaire en nmbre decimal
     for i in range(length):
         bit = int(bin_number[length - 1 - i])  
         result += bit * (2 ** i) 
-    return result
+    return str(result)
 
 def dec_to_hex(dec_number) : # converti un nombre decimal en nombre hexadecimal
 
@@ -131,7 +130,7 @@ def dec_to_hex(dec_number) : # converti un nombre decimal en nombre hexadecimal
         remainder = dec_number % 16
         result = dec_to_hex_map[remainder] + result  
         dec_number = dec_number // 16
-    return result
+    return str(result)
 
 def hex_to_dec(hex_number) : # converti un nombre hexadecimal en nombre decimal
     hex_number = capitalize(hex_number)
@@ -153,7 +152,7 @@ def hex_to_bin(hex_number) : # converti un nombre hexadecimal en nombre binaire
     else :
         dec_number = hex_to_dec(hex_number)
         bin_number = dec_to_bin(dec_number)
-        return bin_number
+        return str(bin_number)
 
 def bin_to_hex(bin_number) : # converti un nombre binaire en un nombre hexadecimal
     
@@ -162,7 +161,7 @@ def bin_to_hex(bin_number) : # converti un nombre binaire en un nombre hexadecim
     else :
         dec_number = bin_to_dec(bin_number)
         hex_number = dec_to_hex(dec_number)
-        return hex_number
+        return str(hex_number)
 
 
 

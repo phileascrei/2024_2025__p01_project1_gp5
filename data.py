@@ -4,8 +4,8 @@ ask_again_for_the_init_number_text = "Le nombre entré n'est pas pris en charge 
 
 ask_for_the_init_base_intro_text = "Dans quel base se trouve votre nombre ? \n"
 ask_for_the_init_base_exept_bin_and_dec_text = ask_for_the_init_base_intro_text + " Tapez '16' s'il se trouve dans la base Hexadécimale \n"
-ask_for_the_init_base_exept_bin_text = ask_for_the_init_base_exept_bin_and_dec_text + " Tapez '10' s'il se trouve dans la base Decimale \n"
-ask_for_the_init_base_text = ask_for_the_init_base_exept_bin_text + " Tapez '2' s'il se trouve dans la base Binaire \n"
+ask_for_the_init_base_exept_bin_text = ask_for_the_init_base_intro_text + " Tapez '10' s'il se trouve dans la base Decimale \n" + " Tapez '16' s'il se trouve dans la base Hexadécimale \n"
+ask_for_the_init_base_text = ask_for_the_init_base_intro_text + " Tapez '2' s'il se trouve dans la base Binaire \n" + " Tapez '10' s'il se trouve dans la base Decimale \n" + " Tapez '16' s'il se trouve dans la base Hexadécimale \n"
 
 ask_again_for_the_init_base_text = "La base initial entré n'est pas pris en charge par le pogramme, veuillez entrer une autre base : "
 non_accepted_base = "La base n'est pas acceptée pour le nombre entré, veuillez entrer une autre base : "
