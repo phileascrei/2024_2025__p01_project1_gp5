@@ -3,10 +3,6 @@ from tools_phileas import *
 from tools_arsene import * 
 
 
-def is_a_valid_base (base) :
-    return base in bases_accepted
-
-
 def ask_for_the_init_base(init_number) :
 
     init_base = input(ask_for_the_init_base_text)
@@ -30,8 +26,9 @@ def ask_for_the_init_base(init_number) :
                     return init_base
         else:
             init_base = input(ask_again_for_the_init_base_text)
-# WIP
 
+def is_a_valid_base (base) :
+    return base in bases_accepted
 
 def check_validity_of_init_number_for_init_base (init_number) :
     bin_validity = True
@@ -47,7 +44,9 @@ def check_validity_of_init_number_for_init_base (init_number) :
             bin_validity = False
             dec_validity = False
     return bin_validity, dec_validity, hex_validity
-# fonction a rtefaire
+
+
+
 
 
 def hex_to_bin(hex_number):
